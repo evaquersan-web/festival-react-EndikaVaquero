@@ -1,0 +1,27 @@
+{
+  "name": "festival-react-endikavaquero",
+  "version": "1.0.0",
+  "description": "Mi repositorio para el festival de react",
+  "keywords": [
+    "dweb",
+    "festival",
+    "react",
+    "dam",
+    "2b"
+  ],
+  "homepage": "https://github.com/evaquersan-web/festival-react-EndikaVaquero#readme",
+  "bugs": {
+    "url": "https://github.com/evaquersan-web/festival-react-EndikaVaquero/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaquersan-web/festival-react-EndikaVaquero.git"
+  },
+  "license": "ISC",
+  "author": "Endika Vaquero <evaquersan@educacion.navarra.es>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
