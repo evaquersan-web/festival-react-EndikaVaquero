@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ConciertoCard from "./ConciertoCard";
 
 function App() {
 
@@ -19,6 +20,9 @@ return (
             }}>Hacer Click</button>
             
             <h1>{numeroClics}</h1>
+
+            <h1>Cartelera</h1>
+            <ConciertoCard/>
         </main>
 
     );
