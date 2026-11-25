@@ -1,28 +1,34 @@
+
 import { useState } from "react";
 import ConciertoCard from "./ConciertoCard";
+import Cabecera from "./Cabecera";
+import "./App.css";
 
 function App() {
 
-const[numeroClics, setNumeroClicks] = useState(0);
+const concierto = {
+    artista: "Fontaines D.C.",
+    genero: "Rock",
+    fecha: "14/11/2026",
+    horario: "22:30",
+  };
+
+const cabecera = {
+    titulo: "Festival React Endika",
+    descripcion: "Bienvenido a la aplicacion de conciertos de Endika",
+};  
+
+function manejarClick(){
+    console.log("Has pulsado en", concierto.artista);
+}
 
 return (
 
         <main>
-
-            <h1>Festival React</h1>
-
-            
-            <p>Bienvenido a nuestra aplicación de conciertos.</p>
-
-        <button onClick={(ev)=>{
-              console.log(ev);
-              setNumeroClicks(numeroClics + 1);
-            }}>Hacer Click</button>
-            
-            <h1>{numeroClics}</h1>
+            <Cabecera info={cabecera}/>
 
             <h1>Cartelera</h1>
-            <ConciertoCard/>
+            <ConciertoCard datos={concierto} alPulsar={manejarClick} />
         </main>
 
     );
