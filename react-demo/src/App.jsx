@@ -1,4 +1,5 @@
-
+import { conciertos } from "./data/conciertos";
+import { duracion, hora, minutosTotales, solapan } from "./utils/agenda";
 import { useState } from "react";
 import ConciertoCard from "./ConciertoCard";
 import Cabecera from "./Cabecera";
@@ -22,6 +23,14 @@ function manejarClick(){
     console.log("Has pulsado en", concierto.artista);
 }
 
+
+    console.log(duracion(conciertos[2]));
+    console.log(solapan(conciertos[0], conciertos[1]));
+    console.log(solapan(conciertos[0], conciertos[2]));
+    console.log(hora(1100));
+    console.log(minutosTotales(conciertos));
+
+
 return (
 
         <main>
@@ -29,10 +38,11 @@ return (
 
             <h1>Cartelera</h1>
             <ConciertoCard datos={concierto} alPulsar={manejarClick} />
+        
         </main>
 
     );
-
+    
 }
 
 
